@@ -38,4 +38,13 @@ const CoursePage = async ({ params }) => {
   )
 }
 
+export async function generateMetadata({ params }) {
+  const id = (await params).id
+  const course = await getCourse(id)
+
+  return {
+    title: course.title
+  }
+}
+
 export default CoursePage

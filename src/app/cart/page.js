@@ -11,4 +11,8 @@ const CartPage = async () => (
   </>
 )
 
+export const metadata = {
+  title: 'Cart - EA Trading Academy'
+}
+
 export default CartPage
