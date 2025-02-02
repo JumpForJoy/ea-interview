@@ -1,0 +1,57 @@
+.member > h4 a,
+.member > ul a {
+  transition: color 0.2s;
+}
+
+.member > h4 a:hover,
+.member > ul a:hover {
+  color: var(--highlight);
+}
+
+.member > h4 {
+  margin-bottom: 16px;
+}
+.member > p {
+  margin-bottom: 70px;
+}
+.member > ul {
+  gap: 15px;
+}
+.member > ul a {
+  color: var(--text-dark);
+}
+.member > ul svg {
+  height: 20px;
+}
+
+.member > ul,
+.member .member_details,
+.member .member_details ul {
+  display: flex;
+  align-items: center;
+}
+
+.member .member_details {
+  gap: 30px;
+  margin-bottom: 70px;
+}
+.member .member_details li + li {
+  padding-left: 15px;
+  margin-left: 15px;
+  position: relative;
+  z-index: 5;
+}
+.member .member_details li + li:before {
+  content: '';
+  background-color: var(--grey-light);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.member .member_details svg {
+  vertical-align: middle;
+  height: 17px;
+}

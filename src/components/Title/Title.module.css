@@ -1,0 +1,22 @@
+.title > p {
+  margin-bottom: 40px;
+}
+
+.title .title_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.title .title_heading:last-child {
+  margin-bottom: 48px;
+}
+
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6 {
+  margin-bottom: 0;
+}

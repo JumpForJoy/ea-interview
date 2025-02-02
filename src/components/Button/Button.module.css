@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--offset);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-inverse);
+  background-color: var(--highlight);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  padding: 9px 30px;
+  transition:
+    color 0.2s,
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.button:hover,
+.button.button--inverse:hover {
+  color: var(--text-inverse);
+  background-color: var(--highlight-dark);
+  border-color: transparent;
+}
+
+.button.button--inverse {
+  color: var(--highlight-dark);
+  background-color: var(--background);
+  border-color: var(--highlight-dark);
+}
+
+.button.button--block {
+  display: flex;
+  width: 100%;
+}
+
+.button.button--orange {
+  background-color: var(--orange);
+}
+.button.button--orange:hover {
+  background-color: var(--highlight);
+}
+
+.button svg {
+  width: 12px;
+  height: auto;
+  vertical-align: middle;
+}

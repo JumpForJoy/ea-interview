@@ -1,0 +1,97 @@
+.article *:last-child {
+  margin-bottom: 0;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6,
+.article p,
+.article table {
+  margin-bottom: 20px;
+}
+
+.article ul,
+.article ol {
+  margin-bottom: 30px;
+}
+
+.article hr {
+  margin: 30px 0 30px;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  font-weight: 600;
+  font-family: var(--font-poppins);
+}
+
+.article p a {
+  color: var(--highlight);
+  transition: color 0.2s;
+}
+.article p a:hover {
+  color: var(--text-dark);
+}
+.article p strong {
+  font-weight: 600;
+}
+
+.article ul li {
+  padding-left: 27px;
+  position: relative;
+  z-index: 5;
+}
+.article ul li:before {
+  content: '';
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  border-color: var(--green);
+  width: 11px;
+  height: 6px;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  z-index: 5;
+  transform: rotate(-45deg);
+}
+.article ul li + li {
+  margin-top: 12px;
+}
+
+.article table {
+  width: 100%;
+}
+.article table th,
+.article table td {
+  border: 1px solid var(--grey-light);
+  padding: 10px 16px;
+}
+.article table thead th {
+  text-align: left;
+}
+.article table thead th[colspan] {
+  text-align: center;
+}
+.article table tbody tr:nth-child(odd) {
+  background-color: var(--grey);
+}
+.article table tbody td + th {
+  text-align: right;
+}
+
+.article img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.article hr {
+  border-top: 0;
+  border-color: var(--grey-light);
+}

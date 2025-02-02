@@ -1,0 +1,30 @@
+.label {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--grey-dark);
+  background-color: var(--grey);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.label.label--yellow {
+  color: var(--yellow-text);
+  background-color: var(--yellow-bg);
+}
+
+.label.label--green {
+  color: var(--green-text);
+  background-color: var(--green-bg);
+}
+
+.label.label--blue {
+  color: var(--blue-text);
+  background-color: var(--blue-bg);
+}
+
+.label.label--pink {
+  color: var(--pink-text);
+  background-color: var(--pink-bg);
+}

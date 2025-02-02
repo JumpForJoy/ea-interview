@@ -1,0 +1,65 @@
+.banner {
+  color: var(--text-inverse);
+  background-color: var(--highlight);
+}
+.banner:not(:last-child) {
+  margin-bottom: 80px;
+}
+.banner.banner--grey {
+  color: var(--text);
+  background-color: var(--grey-alt);
+}
+.banner.banner--grey h2 {
+  color: var(--text-dark);
+}
+
+.banner h2 {
+  color: inherit;
+  margin-bottom: 20px;
+}
+.banner p {
+  margin-bottom: 40px;
+}
+
+.banner .banner_body,
+.banner .banner_actions {
+  display: flex;
+}
+
+.banner .banner_body {
+  justify-content: flex-end;
+  padding: 120px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.banner .banner_content {
+  max-width: 50%;
+}
+
+.banner .banner_image {
+  object-fit: contain;
+  object-position: left top;
+  margin-left: -150px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.banner .banner_actions {
+  gap: 30px;
+}
+.banner .banner_actions button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: 0;
+  z-index: 5;
+  transition: top 0.3s;
+}
+.banner .banner_actions button:hover {
+  top: -7px;
+}
+
+.banner .banner--h1 {
+  font-size: 48px;
+}

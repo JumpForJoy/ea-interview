@@ -1,0 +1,11 @@
+.bar {
+  text-align: center;
+  color: white;
+  background-color: var(--highlight);
+  padding: 12px 15px;
+}
+
+.bar strong {
+  font-weight: 600;
+  font-family: var(--font-poppins);
+}

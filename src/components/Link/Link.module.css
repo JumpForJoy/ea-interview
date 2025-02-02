@@ -1,0 +1,22 @@
+.link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: var(--highlight);
+}
+
+.link > svg {
+  width: 14px;
+  height: auto;
+  margin: 0 var(--offset);
+}
+.link > svg:first-child {
+  margin-left: 0;
+}
+.link > svg:last-child {
+  margin-right: 0;
+}

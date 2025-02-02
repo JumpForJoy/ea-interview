@@ -1,0 +1,13 @@
+.section {
+  padding: var(--offset-m) 0;
+  margin-bottom: 80px;
+}
+
+.section.section--center :global(.title) {
+  justify-content: center;
+}
+
+.section.section--grey {
+  background-color: var(--grey);
+  padding: 65px 0;
+}

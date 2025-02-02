@@ -1,0 +1,28 @@
+.header .header_content,
+.header .header_nav,
+.header .header_actions {
+  display: flex;
+  align-items: center;
+}
+
+.header .header_content,
+.header .header_nav {
+  justify-content: space-between;
+}
+
+.header .header_content {
+  border-bottom: 1px solid var(--grey-light);
+  padding: var(--offset) 0;
+}
+
+.header .header_search {
+  width: 798px;
+}
+
+.header .header_nav {
+  padding: var(--offset) 0;
+}
+
+.header .header_actions {
+  gap: 24px;
+}

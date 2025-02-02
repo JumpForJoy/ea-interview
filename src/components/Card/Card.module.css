@@ -1,0 +1,91 @@
+.card {
+  font-size: 14px;
+  background-color: var(--grey);
+  border-radius: var(--border-radius);
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.card .card_tag {
+  position: absolute;
+  top: var(--offset);
+  left: var(--offset);
+  z-index: 10;
+}
+
+.card .card_body {
+  padding: 12px;
+}
+
+.card .card_image {
+  display: block;
+  padding-top: 67%;
+  position: relative;
+  z-index: 5;
+}
+.card .card_image img {
+  object-fit: cover;
+}
+
+.card .card_content > * + * {
+  margin-top: 12px;
+}
+.card .card_title a {
+  transition: color 0.2s;
+}
+.card .card_title a:hover {
+  color: var(--highlight);
+}
+.card .card_content h4 {
+  color: var(--text-dark);
+}
+
+.card .card_list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.card .card_list.card_list--horizontal {
+  flex-direction: row;
+  gap: 16px;
+}
+.card .card_list li svg {
+  vertical-align: middle;
+  width: 12px;
+  height: auto;
+  margin-right: 7px;
+}
+
+.card .card_free,
+.card .card_price strong {
+  font-size: 18px;
+}
+
+.card .card_free {
+  display: block;
+  color: var(--green);
+}
+
+.card .card_price {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+  line-height: 1.2;
+  color: var(--grey-medium);
+}
+.card .card_price strong {
+  color: var(--highlight);
+}
+.card .card_price s {
+  font-size: 18px;
+  color: var(--red);
+}
+
+.card .card_trunc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}

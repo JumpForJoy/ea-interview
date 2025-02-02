@@ -1,0 +1,33 @@
+.intro,
+.intro .intro_actions {
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  gap: 150px;
+}
+
+.intro .intro_content h1 {
+  margin-bottom: var(--offset-alt);
+}
+.intro .intro_content p {
+  margin-bottom: var(--offset-m);
+}
+
+.intro .intro_image {
+  flex: 0 0 auto;
+  width: 462px;
+}
+.intro .intro_image img {
+  width: 100%;
+}
+
+.intro .intro_actions {
+  gap: 30px;
+}
+
+.intro .intro_actions > a,
+.intro .intro_actions > button {
+  width: 100%;
+}

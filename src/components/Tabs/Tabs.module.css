@@ -1,0 +1,26 @@
+.tabs .tabs_header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: var(--font-poppins);
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--grey-light);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.tabs .tabs_header button {
+  background-color: transparent;
+  border: 0;
+}
+.tabs .tabs_header button:global(.active) {
+  color: var(--highlight);
+}
+
+.tabs .tabs_tab {
+  display: none;
+}
+.tabs .tabs_tab:global(.active) {
+  display: block;
+}
